@@ -1,8 +1,8 @@
 <template>
   <div>
-    <a href="/">Pokemon List</a>
-    <a href="/id">Pokemon por Id</a>
-    <a href="/about">About</a>
+    <router-link to="/">Pokemon List</router-link>
+    <router-link to="/id">Pokemon por Id</router-link>
+    <router-link to="/about">About</router-link>
   </div>
 </template>
 
@@ -10,4 +10,14 @@
 export default {};
 </script>
 
-<style scoped></style>
+<style scoped>
+div {
+  padding: 0 30px;
+}
+
+div a {
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0 10px;
+}
+</style>
