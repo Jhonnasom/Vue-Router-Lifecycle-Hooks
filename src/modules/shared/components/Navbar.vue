@@ -1,10 +1,10 @@
 <template>
   <div>
-    <router-link to="/">Pokemon List</router-link>
+    <router-link :to="{ name: 'home' }">Pokemon List</router-link>
     <router-link :to="{ name: 'pokemon-id', params: { id: 85 } }"
       >Pokemon por Id</router-link
     >
-    <router-link to="/about">About</router-link>
+    <router-link :to="{ name: 'about' }">About</router-link>
   </div>
 </template>
 
